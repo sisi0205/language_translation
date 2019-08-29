@@ -1,0 +1,25 @@
+Name: Python paramter and recursive
+
+Clemson Email Addressi: lisiw@clemson.edu
+
+Project no: Project #6
+
+Project due date: December 7th of 2017
+
+Project description: 
+
+Paramter:
+I implemented the parameters by adding ArgNode() and ParameterNode(), in both Node have a vector<Node *>. And both of them have insert() member function to puch_back Node*.  Using "dynamic_cast" to add push_back node into vector in parser.y. 
+I also add another vector<FunctionTable> in tableManager to keep track of parameter in function.
+After pushscope, I dynamic_cast to call fucntion geteval() in ParameterNode(). In getvval() function I pair the paramter and corresponding argument, insert them into symboltable in currentscope. 
+
+Recursive:
+I got recursive for free after impelemented paramters. 
+
+
+Default value: 
+I added a virtual funciton getIdent() in Node(), and redefine the getIdent in IdentNode() and AsgBinaryNode() to get the name of string when pair the paramter and corresponding argument. 
+
+
+Problems that I had in completing this project: 
+

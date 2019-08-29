@@ -1,0 +1,25 @@
+Name: Python Functions, Scope & Decision
+
+Clemson Email Addressi: lisiw@clemson.edu
+
+Project no: Project #5
+
+Project due date: December 7th of 2017
+
+Project description: 
+I implemented the basic scope by using two functiontable and symboltable and tablemanager. 
+Nested scope implemented by pushscope when function is called.
+
+If_else implemented by using IfNode.
+Ture and False implemented by using BoolLiteral which is a subclass of IntLiteral
+
+Return statement is implemented by using ReturnNode. When eval() ReturnNode will insert string "__return__" to current symboltable and return the value to SuiteNode. 
+
+If return is none, my return statement will return none. I created a class NoneLiteral which is a sub 
+
+Implemented the static scope for functions(see static_scope.py). I use TableManager::checkFucScope() to get the scope of calling function, if(checkFucScope(name)!=currentScope) I will push_back tables[checkFucScope(name)-1] to vector. 
+
+The easiest part of this project: submit the project
+fixed the static scope. 
+
+Problems that I had in completing this project: 
